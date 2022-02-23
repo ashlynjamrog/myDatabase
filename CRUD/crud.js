@@ -87,7 +87,7 @@ filter = async(name) => {
                     <Text>Filter:</Text>
                     <TextInput style={crudStyles.display} onChangeText={(txt) => this.filter(txt)}></TextInput>
                     </View>
-                    <br></br>
+                    
                     <View style={{ padding: 5}}>
                     <Text>Name:</Text>
                     <TextInput onChangeText={(txt) => this.nameChange(txt)} style={crudStyles.display}></TextInput>

@@ -11,37 +11,9 @@ import 'react-tabs/style/react-tabs.css';
 
 export default function App() {
   return (
-    <Tabs>
-      <TabList>
-        <Tab>Counter</Tab>
-        <Tab>Degree Converter</Tab>
-        <Tab>Flight Booker</Tab>
-        <Tab>Timer</Tab>
-        <Tab>CRUD</Tab>
-      </TabList>
-      <TabPanel>
-        <Counter></Counter>
-      </TabPanel>
-      <TabPanel>
-        <Converter></Converter>
-      </TabPanel>
-      <TabPanel>
-        <FlightBooker></FlightBooker>
-      </TabPanel>
-      <TabPanel>
-        <Timer></Timer>
-      </TabPanel>
-      <TabPanel>
-        <Crud></Crud>
-      </TabPanel>
-    </Tabs>
-    // <View style={styles.container}>
-    //   <Counter></Counter>
-    //   <Converter></Converter>
-    //   <FlightBooker></FlightBooker>
-    //   <Timer></Timer>
-    //   <Crud></Crud>
-    // </View>
+    <View style={styles.container}>
+    <Crud></Crud>
+    </View>
 
   );
 }
@@ -49,6 +21,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 15,
     backgroundColor: '#fff',
     alignItems: 'center',
     flexDirection: 'row',
